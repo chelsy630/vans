@@ -7,6 +7,4 @@ class Drink:
 class Student:
             def __init__(self, new_gender, new_major, new_id):
                 self.gender = new_gender
-                self.__major = new_major
-                self.id = new_id
 
