@@ -11,6 +11,6 @@ x= 3
 str_x = float(x)
 print(str_x)
 
-x= 3
+x= 4
 str_x = bool(x)
 print(str_x)
