@@ -22,11 +22,14 @@ for x in soup.find_all('span',{'class':'sc-6oxm01-2 hiTIMq'}):
 print(meta_data)
 forums =[] #找到看板
 author =[] #找到作者
+time =[]
 for i in range(len(meta_data)):
     if i %3 ==0:
         forums.append(meta_data[i])
     if i %3 ==1:
         author.append(meta_data[i])
+    if i %3 ==2:
+        time.append(meta_data[i])
 titles = []
 for x in soup.find_all('h2',{'class':'sc-1v1d5rx-3 eihOFJ'}):
     titles.append(x.text)
